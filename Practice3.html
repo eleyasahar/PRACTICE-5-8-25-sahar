@@ -20,7 +20,7 @@
   </ul>
 </nav>
   <!-- TODO: Begin the <main> section -->
-    <main>
+    <form>
     <!-- TODO: Add a <section> introducing the event with an <article> that includes a short paragraph and maybe a quote -->
       <section>
         <article>
@@ -30,35 +30,67 @@
         </article>
       </section>
     <!-- TODO: Add another <section> with the actual <form> for registration -->
-<section>
-  <form>
-    Registraion form
-  </form>
-</section>
+<fieldset>
+  <h3> Registarin Form </h3>
       <!-- TODO: Use a <form> tag with method="post" and action="#" -->
+  <form method="post" action="#"></form> 
 
+      <!-- TODO: Use a <form> tag with method="post" and action="#" -->
         <!-- TODO: Group related inputs using <fieldset> and <legend> -->
-
+<fieldset>
+  <legand><Strong><u>Personal Information</Strong></u></legand><br><br>
         <!-- TODO: Add input for Full Name (text) -->
-        
+        <label for="Name">Enter Your Full:</label>
+        <input type="text" id="Name" name="name" placeholder="Enter your Name" required><br><br>  
         <!-- TODO: Add input for Email (type="email") -->
-
+      <label for="email">Enter your email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
+         
         <!-- TODO: Add input for Mobile Number (type="tel") -->
-
+          <label for="Mobile">Mobile Number :</label>
+          <input type="tel" id="Mobile" name="mobile" placeholder="eg. 123-456-7890" required><br><br>
         <!-- TODO: Add input for Age (type="number") -->
-
+          <label for="age">Enter Your Age:</label>
+         <input type="number" id="age" name="age" required><br><br>
         <!-- TODO: Add a dropdown (select) for choosing your T-Shirt size (S, M, L, XL) -->
-
+       <label for="T-Shirt-Size">T Shirt-Size:</label>
+        <select id="T-Shirt-size" id="T-shirt-size"><br>
+         <option value="S">Small</option>
+         <option value="M">Medium</option>
+         <option value="L">Large</option>
+         <option value="XL">Extra Large</option>
+        </select><br><br>
         <!-- TODO: Add radio buttons for Gender (Male / Female / Other) -->
+          <label>Gender : </label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="male">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="male">Other</label><br>
+</fieldset>
 
         <!-- TODO: Add checkboxes for Sessions Interested In (AI, Web Dev, Cybersecurity) -->
+        <legend>Workshop Preferences </legend>
+        <label>Session Interested In:</label><br>
+        <input type="checkbox" id="ai" name="seessions" value="ai">
+        <label for="ai">Airtificial intelligence</label><br>
+         <input type="checkbox" id="Web Dev" name="seessions" value="web Dev">
+        <label for="Web Deb">Web development</label><br>
+         <input type="checkbox" id="Cybersecurity" name="seessions" value="Cybersecurity">
+        <label for="Cybersecurity">Cybersecurity</label><br><br>
 
         <!-- TODO: Add a text area for writing a brief bio or motivation for joining -->
-
+      <label for="bio">Brief Bio/ motivation:</label><br>
+      <textarea id="bio" name="bio" row="4" cols="50" placeholder="Tell us why you want to join....."></textarea><br><br>
         <!-- TODO: Add a range input for rating your tech knowledge (0 to 10) -->
-
+        <label for="knowledge">Rate your tech knowledge (0-10): </label>
+        <input type="range" id="knowledge" min="0" max="10">
+        <output for="knowledge">5</output><br><br>
+</fieldset>
         <!-- TODO: Add a submit button -->
-         <center><button>Submmit</button></center>
+         <center><button type="Submmit"> Submmit </button></center>
+</form>
 
     <!-- TODO: End the form section -->
      </section>
@@ -73,7 +105,7 @@
   <!-- TODO: Add a <footer> with organizer name, contact info, and copyright -->
     <footer>
       <p>&copy; Eleyaworkshop. all rights reserved</p>
-      <P><strong>Contact Us: 7983796392</strong></P>
+      <P><strong>Contact Us: 7983700000</strong></P>
     </footer>
 
 </body>
